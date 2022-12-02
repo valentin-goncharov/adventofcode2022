@@ -1,0 +1,20 @@
+  # Compiled class file
+*.class
+
+# Log file
+*.log
+
+HELP.md
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+### IntelliJ IDEA ###
+*.iws
+*.iml
+*.ipr
+/out/
+/.idea
+
+### Mac ###
+.DS_Store
