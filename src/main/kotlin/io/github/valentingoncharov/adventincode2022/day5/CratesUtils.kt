@@ -1,3 +1,5 @@
+package io.github.valentingoncharov.adventincode2022.day5
+
 import java.util.Scanner
 
 fun printStack(stack: List<ArrayDeque<Char>>) {

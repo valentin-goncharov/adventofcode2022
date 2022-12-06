@@ -1,7 +1,5 @@
 package io.github.valentingoncharov.adventincode2022.day5
 
-import printStack
-import readStacks
 import java.io.File
 import java.util.Scanner
 
