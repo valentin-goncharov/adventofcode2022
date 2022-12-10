@@ -7,7 +7,7 @@ fun main() {
     val priorities = (('a'..'z').mapIndexed { index, c -> c to index + 1 } +
                      ('A'..'Z').mapIndexed { index, c -> c to index + 27 }).toMap()
 
-    val scores = File("/Users/valentingoncharov/Work/adventofcode2022/src/main/resources/rucksacks.txt")
+    val scores = File("inputs/rucksacks.txt")
         .readLines()
         .flatMap{
             val first = it.substring(0, it.length/2)

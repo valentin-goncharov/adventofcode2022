@@ -6,7 +6,7 @@ fun main() {
 
     val pattern="(\\d+)-(\\d+),(\\d+)-(\\d+)".toRegex()
 
-    val scores = File("/Users/valentingoncharov/Work/adventofcode2022/src/main/resources/clean_assignments.txt")
+    val scores = File("inputs/clean_assignments.txt")
         .readLines()
         .map{
             val(s1, e1, s2, e2) = pattern.find(it)!!.destructured

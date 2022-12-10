@@ -4,7 +4,7 @@ import java.io.File
 import java.util.Scanner
 
 fun main() {
-    val scanner = Scanner(File("/Users/valentingoncharov/Work/adventofcode2022/src/main/resources/elf_supplies.txt"))
+    val scanner = Scanner(File("inputs/elf_supplies.txt"))
     var max = 0
     var cur = 0
 

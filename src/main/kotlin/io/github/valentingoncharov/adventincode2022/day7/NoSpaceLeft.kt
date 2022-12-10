@@ -4,7 +4,7 @@ import java.io.File
 import java.util.Scanner
 
 fun main() {
-    val scanner = Scanner(File("/Users/valentingoncharov/Work/adventofcode2022/src/main/resources/device_dirs.txt"))
+    val scanner = Scanner(File("inputs/device_dirs.txt"))
 
     val dirs = mutableListOf<Directory>()
 

@@ -4,7 +4,7 @@ import java.io.File
 
 fun main() {
 
-    val sequence = File("/Users/valentingoncharov/Work/adventofcode2022/src/main/resources/comm_sequence.txt")
+    val sequence = File("inputs/comm_sequence.txt")
         .readText()
 
     var point = 3

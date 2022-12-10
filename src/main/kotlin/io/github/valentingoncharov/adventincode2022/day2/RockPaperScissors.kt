@@ -32,7 +32,7 @@ fun main() {
         "C Z" to 6, // scissors - scissors, draw
     )
 
-    val scores = File("/Users/valentingoncharov/Work/adventofcode2022/src/main/resources/rock_paper_scissors.txt")
+    val scores = File("inputs/rock_paper_scissors.txt")
         .readLines()
         .map{ combinations[it] }
         .filterNotNull()

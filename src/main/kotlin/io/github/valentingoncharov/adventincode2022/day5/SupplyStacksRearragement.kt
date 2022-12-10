@@ -5,7 +5,7 @@ import java.util.Scanner
 
 fun main() {
     val movements = """move (\d+) from (\d+) to (\d+)""".toRegex()
-    val scanner = Scanner(File("/Users/valentingoncharov/Work/adventofcode2022/src/main/resources/supply_stacks.txt"))
+    val scanner = Scanner(File("inputs/supply_stacks.txt"))
 
     /*
     [V]         [T]         [J]
