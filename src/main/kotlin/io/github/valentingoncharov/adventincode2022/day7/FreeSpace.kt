@@ -12,5 +12,12 @@ fun main() {
 
     root.printTree()
     println("--------------------------")
-    dirs.filter { it.size <= 100000 }.sumOf { it.size }.let { println(it) }
+
+    val totalDisk = 70000000
+    val updateSize = 30000000
+
+    val freeSize = totalDisk - root.size
+    val needSize = updateSize - freeSize
+
+    dirs.filter { it.size >= needSize }.minBy { it.size }.let { println(it) }
 }
