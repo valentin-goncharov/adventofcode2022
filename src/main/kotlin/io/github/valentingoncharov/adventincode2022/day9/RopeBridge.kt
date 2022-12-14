@@ -4,7 +4,7 @@ import java.io.File
 import java.util.Scanner
 import kotlin.math.abs
 
-fun moveHorizontal(head: Point, tail: Point, route: MutableSet<Point>, steps: Int): Pair<Point, Point> {
+private fun moveHorizontal(head: Point, tail: Point, route: MutableSet<Point>, steps: Int): Pair<Point, Point> {
     var newHead = head
     var newTail = tail
     val step = sign(steps)
@@ -18,13 +18,13 @@ fun moveHorizontal(head: Point, tail: Point, route: MutableSet<Point>, steps: In
             newTail = Point(newTail.label,newTail.x, newTail.y + step)
             route.add(newTail)
         }
-        printBoard(listOf(newHead, newTail))
+//        printBoard(listOf(newHead, newTail))
     }
 
     return newHead to newTail
 }
 
-fun moveVertical(head: Point, tail: Point, route: MutableSet<Point>, steps: Int): Pair<Point, Point> {
+private fun moveVertical(head: Point, tail: Point, route: MutableSet<Point>, steps: Int): Pair<Point, Point> {
     var newHead = head
     var newTail = tail
     val step = sign(steps)
@@ -37,14 +37,14 @@ fun moveVertical(head: Point, tail: Point, route: MutableSet<Point>, steps: Int)
             newTail = Point(newTail.label,newTail.x + step, newTail.y)
             route.add(newTail)
         }
-        printBoard(listOf(newHead, newTail))
+//        printBoard(listOf(newHead, newTail))
     }
 
     return newHead to newTail
 }
 
 fun main() {
-    val scanner = Scanner(File("inputs/rope_head_moves_test.txt"))
+    val scanner = Scanner(File("inputs/rope_head_moves.txt"))
 
     val tailRoute = mutableSetOf<Point>()
 
